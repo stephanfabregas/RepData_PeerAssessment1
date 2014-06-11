@@ -218,6 +218,16 @@ Start by calculating the sum of steps taken each day.</p>
 
 <pre><code class="r">mnsteps &lt;- mean(counts, na.rm=TRUE)
 mdsteps &lt;- median(counts, na.rm=TRUE)
+mnsteps
+</code></pre>
+
+<pre><code>## [1] 9354
+</code></pre>
+
+<pre><code class="r">mdsteps
+</code></pre>
+
+<pre><code>## [1] 10395
 </code></pre>
 
 <p>The <strong>mean</strong> steps taken each day is 9354.2295 and the <strong>median</strong> steps taken each day is 10395.</p>
@@ -297,6 +307,16 @@ mv.dt$steps[is.na(mv.dt$steps)] &lt;- mnmvs
 
 <pre><code class="r">mv.mnsteps &lt;- mean(mv.counts, na.rm=TRUE)
 mv.mdsteps &lt;- median(mv.counts, na.rm=TRUE)
+mv.mnsteps
+</code></pre>
+
+<pre><code>## [1] 10766
+</code></pre>
+
+<pre><code class="r">mv.mdsteps
+</code></pre>
+
+<pre><code>## [1] 10766
 </code></pre>
 
 <p>The <strong>mean</strong> steps taken each day is 1.0766 &times; 10<sup>4</sup> and the <strong>median</strong> steps taken each day is 1.0766 &times; 10<sup>4</sup>, once the missing values have been replaced with the mean value for that 5-minute interval.</p>

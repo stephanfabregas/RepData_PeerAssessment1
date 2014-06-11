@@ -33,6 +33,8 @@ Step 2: Calculate and report the **mean** and **median** total number of steps t
 ```{r}
 mnsteps <- mean(counts, na.rm=TRUE)
 mdsteps <- median(counts, na.rm=TRUE)
+mnsteps
+mdsteps
 ```
 
 The **mean** steps taken each day is `r mnsteps` and the **median** steps taken each day is `r mdsteps`.
@@ -107,6 +109,8 @@ hist(mv.counts)
 ```{r}
 mv.mnsteps <- mean(mv.counts, na.rm=TRUE)
 mv.mdsteps <- median(mv.counts, na.rm=TRUE)
+mv.mnsteps
+mv.mdsteps
 ```
 
 The **mean** steps taken each day is `r mv.mnsteps` and the **median** steps taken each day is `r mv.mdsteps`, once the missing values have been replaced with the mean value for that 5-minute interval.
